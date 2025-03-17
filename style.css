@@ -1,0 +1,221 @@
+:root {
+    --color-primary: #1D68A7;
+    --color-secondary: #FFB81C;
+    --color-tertiary: #28A745;
+    --color-button: #D93F00;
+    --color-button-hover: #FF5733;
+    --color-text: #F4F4F9; 
+    --color-white: #FFFFFF;    
+    
+}
+
+/* Reset de margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração geral do corpo da página */
+body {
+    height: 100vh;
+    background-color: var(--color-primary); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estrutura principal */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Banner de topo */
+.header-banner {
+    flex: 40%; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0 0;
+}
+
+/* Seção onde os usuários inserem os nomes */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 38px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-white);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);/**/
+}
+
+.section-title {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
+}
+
+.section-subtitle {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Campo de entrada de nomes */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+.button-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Estilos de entrada de texto */
+.input-title {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-family: "Press Start 2P", system-ui;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /**/
+}
+
+/* Configuração geral dos botões */
+button {
+    padding: 15px 30px;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 20px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+/* Botão para adicionar nomes */
+.button-add {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0;
+}
+
+.button-add:hover {
+    background-color: #81C784;
+}
+
+/* Botões principais: Sortear e Reiniciar */
+.button-draw,
+.button-single-draw,
+.button-reset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 15px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+/* Ícones dentro dos botões */
+.button-draw img,
+.button-single-draw img,
+.button-reset img {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.button-draw:hover,
+.button-single-draw:hover,
+.button-reset:hover {
+    background-color: var(--color-button-hover);
+}
+
+/* Lista de resultados */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* Lista de resultados */
+.result-list {
+    margin-top: 15px;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Botão de remover */
+.remove-btn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  /* Ícone de remover: */
+  .icon-remove {
+    width: 50px;
+    height: auto;
+    background: transparent;
+    vertical-align: middle;
+  }
+  
+  /* Espaço entre o nome e o botão do lixo */
+  .name-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
